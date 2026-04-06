@@ -1,0 +1,11 @@
+Objetivo: Predecir el consumo de energía eléctrica basado en la producción.
+
+Escribe una función llamada `predecir_consumo_energia(X, y, X_new)` que reciba:
+- `X`: Matriz de entrenamiento (ej. unidades producidas).
+- `y`: Vector objetivo (consumo en kWh).
+- `X_new`: Nuevos datos de producción para predecir.
+
+La función debe:
+1. Entrenar un modelo de `LinearRegression` de sklearn usando X e y.
+2. Predecir el consumo para los valores en X_new.
+3. Retornar el array de predicciones de numpy.
