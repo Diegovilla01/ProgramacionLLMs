@@ -1,0 +1,10 @@
+Objetivo: Detectar muestras fuera de límites de control estadístico (SPC).
+
+Escribe una función llamada `detectar_fuera_de_limites(df_medidas, lcl, ucl)` que reciba:
+- `df_medidas`: DataFrame con columnas ['id_lote', 'medida_mm'].
+- `lcl`: Límite de control inferior (Lower Control Limit).
+- `ucl`: Límite de control superior (Upper Control Limit).
+
+La función debe:
+1. Identificar los lotes donde 'medida_mm' sea menor que lcl o mayor que ucl.
+2. Retornar un diccionario con dos llaves: 'total_lotes', que es el número de filas analizadas, y 'fuera_de_control', que es la lista de los 'id_lote' que incumplen los límites.
