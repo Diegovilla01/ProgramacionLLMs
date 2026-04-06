@@ -1,0 +1,10 @@
+Objetivo: Identificar cuellos de botella en una línea de producción.
+
+Escribe una función llamada `analizar_cuello_botella(df_tiempos, tiempo_ciclo_max)` que reciba:
+- `df_tiempos`: Un DataFrame con columnas ['estacion', 'tiempo_operacion_seg'].
+- `tiempo_ciclo_max`: Un valor entero que representa el tiempo límite permitido por estación.
+
+La función debe:
+1. Calcular una columna 'exceso_tiempo' que sea la diferencia entre 'tiempo_operacion_seg' y el 'tiempo_ciclo_max'.
+2. Filtrar solo las estaciones donde el 'tiempo_operacion_seg' sea estrictamente mayor al 'tiempo_ciclo_max'.
+3. Retornar un DataFrame con las columnas ['estacion', 'exceso_tiempo'], ordenado de mayor a menor exceso.
