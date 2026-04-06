@@ -1,0 +1,10 @@
+Objetivo: Clasificar la prioridad de envío logístico mediante escalado y modelo logístico.
+
+Escribe una función llamada `clasificar_prioridad(X, y)` que reciba:
+- `X`: Características de los pedidos (peso, distancia, costo).
+- `y`: Etiquetas de prioridad (0: Estándar, 1: Urgente).
+
+La función debe:
+1. Escalar las características X usando `StandardScaler`.
+2. Entrenar un modelo de `LogisticRegression` con los datos escalados.
+3. Retornar el modelo entrenado (el objeto del modelo).
