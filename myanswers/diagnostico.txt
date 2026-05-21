@@ -11,7 +11,7 @@ El output esperado retorna `threshold` (un entero: 2 o 3), cuando según la desc
 de la pregunta debería retornar un DataFrame booleano con las mismas dimensiones del 
 DataFrame de entrada, indicando qué valores son outliers.
 
-Mi solución (answer-0329.py) implementa correctamente la función detect_outliers tal 
+Mi solución (answer-329.py) implementa correctamente la función detect_outliers tal 
 como la describe el enunciado: normaliza con StandardScaler y retorna un DataFrame 
 booleano donde True indica que el valor supera el umbral en valor absoluto. Esta 
 implementación es correcta según la descripción de la pregunta.
