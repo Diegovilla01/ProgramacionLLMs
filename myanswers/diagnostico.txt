@@ -1,0 +1,23 @@
+DIAGNÓSTICO - ENTREGA 2 LLMs
+Estudiante: diego.villa1@udea.edu.co
+
+== Pregunta 0329 - detect_outliers ==
+
+El generador de casos tiene un error en su valor de retorno.
+
+En la línea final del generador:
+    return {"df": df, "threshold": threshold}, threshold  # dict primero
+
+El output esperado retorna `threshold` (un entero: 2 o 3), cuando según la descripción 
+de la pregunta debería retornar un DataFrame booleano con las mismas dimensiones del 
+DataFrame de entrada, indicando qué valores son outliers.
+
+Mi solución (answer-0329.py) implementa correctamente la función detect_outliers tal 
+como la describe el enunciado: normaliza con StandardScaler y retorna un DataFrame 
+booleano donde True indica que el valor supera el umbral en valor absoluto. Esta 
+implementación es correcta según la descripción de la pregunta.
+
+El validador marcará esta respuesta como "answers incorrect" porque comparará el 
+DataFrame booleano que devuelve mi función contra el entero `threshold` que devuelve 
+el generador, y estas estructuras son incompatibles. El error está en el generador, 
+no en mi solución.
