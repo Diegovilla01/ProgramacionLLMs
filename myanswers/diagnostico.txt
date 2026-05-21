@@ -1,8 +1,7 @@
 DIAGNÓSTICO - ENTREGA 2 LLMs
 Estudiante: diego.villa1@udea.edu.co
 
-== Pregunta 0329 - detect_outliers ==
-
+Pregunta 0329:
 El generador de casos tiene un error en su valor de retorno.
 
 En la línea final del generador:
